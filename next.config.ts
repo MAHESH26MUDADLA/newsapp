@@ -5,36 +5,34 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "nbcsports.brightspotcdn.com",
+        hostname: "**.brightspotcdn.com",
       },
       {
         protocol: "https",
-        hostname: "media-cldnry.s-nbcnews.com",
+        hostname: "**.nbcnews.com",
       },
       {
         protocol: "https",
-        hostname: "platform.theverge.com",
+        hostname: "**.theverge.com",
       },
       {
         protocol: "https",
-        hostname: "techcrunch.com",
+        hostname: "**.techcrunch.com",
       },
       {
         protocol: "https",
-        hostname: "cdn.mos.cms.futurecdn.net",
+        hostname: "**.futurecdn.net",
       },
       {
         protocol: "https",
-        hostname: "dims.apnews.com",
+        hostname: "**.apnews.com",
       },
       {
         protocol: "https",
-        hostname: "ichef.bbci.co.uk",
+        hostname: "**.bbci.co.uk",
       },
     ],
   },
-
-  // ✅ Skip ESLint during builds (temporary)
   eslint: {
     ignoreDuringBuilds: true,
   },
