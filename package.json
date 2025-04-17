@@ -1,0 +1,55 @@
+{
+  "name": "newsapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "glob": "^11.0.1",
+    "inflight": "^1.0.6",
+    "next": "^15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "swiper": "^11.2.4"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@eslint/eslintrc": "^3",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@storybook/addon-docs": "^8.6.2",
+    "@storybook/addon-essentials": "^8.6.1",
+    "@storybook/addon-interactions": "^8.6.1",
+    "@storybook/addon-onboarding": "^8.6.1",
+    "@storybook/blocks": "^8.6.1",
+    "@storybook/mdx2-csf": "^1.1.0",
+    "@storybook/nextjs": "^8.6.1",
+    "@storybook/react": "^8.6.1",
+    "@storybook/test": "^8.6.1",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "eslint-plugin-storybook": "^0.11.3",
+    "storybook": "^8.5.8",
+    "typescript": "^5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

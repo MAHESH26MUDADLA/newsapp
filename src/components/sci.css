@@ -1,0 +1,31 @@
+/* sci.css */
+
+/* Container for social links (if you wrap these links in a container) */
+.sci-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Anchor styling */
+  .anc {
+    text-decoration: none;
+    color: inherit; /* Inherit text color, or set a specific color if desired */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Icon styling */
+  .anc span {
+    font-size: 24px; /* Adjust the size of the icon */
+    display: inline-block;
+  }
+  
+  /* Hover effect */
+  .anc:hover span {
+    transform: scale(1.1);
+    color: #007bff; /* Change color on hover (example: blue) */
+  }
+  
+  /* Optionally, if you want to change styles based on specific social platforms, you can add more rules: */
+  
+  

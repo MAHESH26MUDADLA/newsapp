@@ -1,0 +1,75 @@
+.create-post {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-post h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .input-field,
+  .file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea.input-field {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .create-post {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

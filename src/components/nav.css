@@ -1,0 +1,75 @@
+@media (min-width:801px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+   
+    .nav-menu{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 55px; /* Adjust according to your header height */
+      left: 10pxpx;
+      right: 15px;
+      bottom: 400px;
+      padding: 10px 0;
+      border-radius: 10px;
+      background-color: #aab9b9; /* aqua or your preferred color */
+      overflow-y: auto;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    /* Navbar links styling */
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  /* Optional: style for mobile menu toggle button */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+  }
+
+  @media (max-width: 800px) {
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+    

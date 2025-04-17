@@ -1,0 +1,115 @@
+/* General Styles */
+.posts {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Posts Container */
+  .posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Post Card */
+  .post-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .post-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .post-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Edit & Save Buttons */
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  .delete-btn{
+    margin-left: 10px;
+  }
+  
+  /* Cancel Button */
+  button:nth-child(2) {
+    background: #ff4d4d;
+  }
+  
+  button:nth-child(2):hover {
+    background: #cc0000;
+  }
+  
+  /* Edit Form */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-form input,
+  .edit-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .edit-form textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  /* Image Preview */
+  .preview {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  

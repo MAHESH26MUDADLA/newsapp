@@ -1,0 +1,59 @@
+.img-bg {
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    /* Instead of cover, use 'contain' to ensure the entire image is visible */
+    background-size: contain;
+    background-position: center;
+     /* Fallback background color */
+    height: 500px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .img-bg-inner {
+    position: absolute;
+    left: 20%;             /* Aligns text to the left */
+    top: 75%;
+    
+    font-family: sans-serif;
+    
+    transform: translateY(-50%);
+   
+    max-width: 50%;      /* Limit the text container's width */
+    /* Optional: a semi-transparent background for contrast */
+    color: #fff;
+    
+    
+  }
+  .img-bg::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0,0.5); /* Black overlay with 50% opacity */
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+    opacity:0.5;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+  }
+  
+  @media (max-width: 800px) {
+    .img-bg {
+      height: 400px;
+    }
+    .img-bg-inner {
+      max-width: 70%;
+      padding: 10px;
+      max-width: 100%; 
+      left: 0;
+    }
+  }
+  
