@@ -35,6 +35,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.nintendo.com", // ✅ Added to support assets.nintendo.com
       },
+      {
+        protocol: "https",
+        hostname: "media.cnn.com", // ✅ Added to support images from CNN
+      },
     ],
   },
   eslint: {

@@ -6,12 +6,6 @@ export const navs = [
     active: true,
   },
   {
-    id: 2,
-    name: 'Posts',
-    link: '/api/news',
-    active: false,
-  },
-  {
     id: 3,
     name: 'Create Post',
     link: '/api/createpostitems',

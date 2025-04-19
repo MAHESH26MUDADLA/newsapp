@@ -13,7 +13,7 @@ export default function Posts() {
     async function fetchNews() {
       try {
         const res = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
+          "/api/news"
         );
 
         if (!res.ok) throw new Error("Failed to fetch news");
