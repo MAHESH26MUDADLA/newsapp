@@ -31,6 +31,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.bbci.co.uk",
       },
+      {
+        protocol: "https",
+        hostname: "**.nintendo.com", // ✅ Added to support assets.nintendo.com
+      },
     ],
   },
   eslint: {

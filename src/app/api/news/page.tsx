@@ -14,7 +14,7 @@ export default function News() {
     async function fetchNews() {
       try {
         const res = await fetch(
-          "https://newsapi.org/v2/top-headlines?country=us&apiKey=5cc1690dbfdf4a30bf818da0c39a20f7"
+          `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
         );
         const data = await res.json();
         setNews(data.articles);
@@ -32,7 +32,7 @@ export default function News() {
         {news.map((article, index) => (
           <div key={index} className="news-card">
           <img
-  src={article.urlToImage || "/default.jpg"}
+  src={article.urlToImage || "./default.png"}
   alt="News"
   width={400}
   height={250}

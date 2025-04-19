@@ -5,21 +5,21 @@ import { Article } from "@/app/types";
 import './posts.css';
 
 export default function Posts() {
-  const [news, setNews] = useState<Article[] | null>(null); // Change initial state to `null`
-  const [loading, setLoading] = useState<boolean>(true); // Loading state
-  const [error, setError] = useState<string | null>(null); // Error state
+  const [news, setNews] = useState<Article[] | null>(null); 
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null); 
 
   useEffect(() => {
     async function fetchNews() {
       try {
         const res = await fetch(
-          "https://newsapi.org/v2/top-headlines?country=us&apiKey=5cc1690dbfdf4a30bf818da0c39a20f7"
+          `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
         );
 
         if (!res.ok) throw new Error("Failed to fetch news");
 
         const data = await res.json();
-        setNews(data.articles || []); // Ensure it's always an array
+        setNews(data.articles || []); 
       } catch (error) {
         setError("Failed to load news. Please try again.");
         console.error("Error fetching news:", error);
@@ -30,9 +30,9 @@ export default function Posts() {
     fetchNews();
   }, []);
 
-  if (loading) return <p>Loading news...</p>; // Show loading state
-  if (error) return <p>{error}</p>; // Show error state
-  if (!news || news.length === 0) return <p>No news available.</p>; // Handle empty state
+  if (loading) return <p>Loading news...</p>; 
+  if (error) return <p>{error}</p>; 
+  if (!news || news.length === 0) return <p>No news available.</p>; 
 
   return (
     <section className="posts">
